@@ -16,7 +16,7 @@ from random import choice
 
 
 rofl_db = []
-bot = telebot.TeleBot(cfg.TOKEN)
+bot = telebot.TeleBot(cfg.KOST_TOKEN)
 
 with open("data/logs.txt", encoding="utf-8") as f:
     text = f.read()
