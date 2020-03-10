@@ -8,7 +8,7 @@
 
 import os
 
-TOKEN = os.environ['TOKEN']
+TOKEN = os.environ['KOST_TOKEN']
 
 HATE_MESSAGES = [
     "Ваши права будут урезаны, Вам запрещено заливать что-либо до следующей пятницы.",
