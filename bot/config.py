@@ -8,7 +8,13 @@
 
 import os
 
-KOST_TOKEN = os.environ['TOKEN']
+KOST_TOKEN = os.environ['KOST_TOKEN']
+PROXY_USER = os.environ['PROXY_USER']
+PROXY_PASS = os.environ['PROXY_PASSWORD']
+PROXY_IP = os.environ['PROXY_IP']
+
+PROXY = 'socks5://' + PROXY_USER + ':' + PROXY_PASS + '@' + PROXY_IP + ':1080'
+
 
 HATE_MESSAGES = [
     "Ваши права будут урезаны, Вам запрещено заливать что-либо до следующей пятницы.",

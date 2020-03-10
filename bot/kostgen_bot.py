@@ -6,6 +6,7 @@
 """
 
 import telebot
+from telebot import apihelper
 import markovify
 import multiprocessing
 import schedule
@@ -14,6 +15,8 @@ import time
 import bot.config as cfg
 from random import choice
 
+apihelper.proxy = {'https':cfg.PROXY}
+print(cfg.PROXY)
 
 rofl_db = []
 bot = telebot.TeleBot(cfg.KOST_TOKEN)
